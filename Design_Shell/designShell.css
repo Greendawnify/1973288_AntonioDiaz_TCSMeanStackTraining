@@ -1,0 +1,44 @@
+.main {
+  background-color: beige;
+  font-weight: bolder;
+  font-size: large;
+  padding: 10px;
+}
+
+.main li {
+  display: inline;
+}
+
+.main a {
+  text-decoration: none;
+  background-color: wheat;
+  padding: 5px;
+}
+
+.main a:hover {
+  background-color: black;
+  color: white;
+}
+
+.title {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: red;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.bodyTitle {
+  text-decoration: underline;
+}
+
+p::first-letter {
+  font-size: 30px;
+}
+
+.footer {
+  border: black solid 3px;
+  border-radius: 60px;
+  height: 100px;
+  width: 100px;
+  background-color: green;
+}
