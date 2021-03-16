@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class='container-fluid'>
-        <div class = 'row'><!-- title-->
+    <div class='container-fluid background'>
+        <div class = 'row header'><!-- title-->
             <div class ='col'>
                 <h1 class = 'd-flex justify-content-center'>ADD A BLOG</h1>
             </div>
         </div> 
 
-        <div class = 'row'> 
+        <div class = 'row header'> 
             <div class = 'col'>
                 <ul class = 'nav justify-content-end'>
                     <li class = 'nav-item'><a href="#" class = 'nav-link'>Add Blog</a></li>
@@ -26,30 +26,31 @@
                 </ul>
             </div>
         </div> 
+        <br/>
 
         <div class = 'row'>
-            <div class = 'col-1'>
+            <div class = 'col-6 d-flex justify-content-end'>
                 <label for="">Title</label>
             </div>
-            <div class = 'col-1'>
-                <input type="text" id = 'titleID'>
+            <div class = 'col-6 d-flex justify-content-start'>
+                <input  type="text" id = 'titleID'>
             </div>
         </div>
         <br/>
         <div class = 'row'>
-            <div class = 'col-1'>
+            <div class = 'col-6 d-flex justify-content-end'>
                 <label for="">Articles</label>
             </div>
-            <div class = 'col-1'>
+            <div class = 'col-6 d-flex justify-content-start'>
                 <input type='textarea' id = 'articleID'>
             </div>
         </div>
         <br/>
         <div class = 'row'>
-            <div class = 'col-1'>
+            <div class = 'col-6 d-flex justify-content-end'>
                 <label for="">Add Image</label>
             </div>
-            <div class = 'col-1'>
+            <div class = 'col-6 d-flex justify-content-start'>
                 <input type='file' id = 'imageID'>
             </div>
         </div>
@@ -59,8 +60,13 @@
             <div class = 'col-1'>
                 <input class = 'btn btn-primary' type="button" value="Add Blog" onclick="addBlog()">
             </div>
-        </div>
+            <div class = 'col-11 d-flex justify-content-end'>
+                <input class = 'btn btn-dark' type="button" value="Clear Blog" onclick="newClear()">
+            </div>
+            
 
+        </div>
+        <br/>
 
         <div class = 'row' id = 'displayContainer'>
             
