@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class='container-fluid'>
+        <div class = 'row'><!-- title-->
+            <div class ='col'>
+                <h1 class = 'd-flex justify-content-center'>ADD A BLOG</h1>
+            </div>
+        </div> 
+
+        <div class = 'row'> 
+            <div class = 'col'>
+                <ul class = 'nav justify-content-end'>
+                    <li class = 'nav-item'><a href="#" class = 'nav-link'>Add Blog</a></li>
+                    <li class = 'nav-item'><a href="#" class = 'nav-link'>Home</a></li>
+                    <li class = 'nav-item'><a href="#" class = 'nav-link'>About Us</a></li>
+                    <li class = 'nav-item'><a href="#" class = 'nav-link'>Contacts</a></li>
+                </ul>
+            </div>
+        </div> 
+
+        <div class = 'row'>
+            <div class = 'col-1'>
+                <label for="">Title</label>
+            </div>
+            <div class = 'col-1'>
+                <input type="text" id = 'titleID'>
+            </div>
+        </div>
+        <br/>
+        <div class = 'row'>
+            <div class = 'col-1'>
+                <label for="">Articles</label>
+            </div>
+            <div class = 'col-1'>
+                <input type='textarea' id = 'articleID'>
+            </div>
+        </div>
+        <br/>
+        <div class = 'row'>
+            <div class = 'col-1'>
+                <label for="">Add Image</label>
+            </div>
+            <div class = 'col-1'>
+                <input type='file' id = 'imageID'>
+            </div>
+        </div>
+        <br/>
+
+        <div class = 'row'>
+            <div class = 'col-1'>
+                <input class = 'btn btn-primary' type="button" value="Add Blog" onclick="addBlog()">
+            </div>
+        </div>
+
+
+        <div class = 'row' id = 'displayContainer'>
+            
+        </div> <!-- display-->
+    </div>
+    <script src="implementationScript.js"></script>
+</body>
+</html>
