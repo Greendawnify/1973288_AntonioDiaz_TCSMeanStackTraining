@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+<body>
+    <div class = 'container'>
+        <!--title row-->
+        <div class = 'row'>
+            <div class = 'col d-flex justify-content-center'>
+                <h1>Shopping Cart</h1>
+            </div>
+        </div>
+
+        <!--cart/checkout row-->
+        <div class = 'row'>
+            <div class = 'col-6 d-flex justify-content-start'>
+                <span><label id='cartValue'>Cart Size: 0</label></span>
+            </div>
+            <div class = 'col-6 d-flex justify-content-end'>
+                <a href="checkout.html">Checkout</a>
+            </div>
+        </div>
+        <br/>
+        <hr/>
+        <br/>
+
+        <!--item display row-->
+        <div class = 'row' id='display'>
+            <div class = 'col-4'>
+                <h5 class = 'name'>Name: Eggs</h5>
+                <h5 class = 'price'>Price: $12.00</h5>
+                <input class='btn btn-success' type="button" value="Add" onclick = 'addToCart(this)'>
+            </div>
+
+            <div class = 'col-4'>
+                <h5 class = 'name'>Name: Bacon</h5>
+                <h5 class = 'price'>Price: $50.00</h5>
+                <input class='btn btn-success' type="button" value="Add" onclick = 'addToCart(this)'>
+            </div>
+
+            <div class = 'col-4'>
+                <h5 class = 'name'>Name: Bread</h5>
+                <h5 class = 'price'>Price: $1.00</h5>
+                <input class='btn btn-success' type="button" value="Add" onclick = 'addToCart(this)'>
+            </div>
+
+            <div class = 'col-4'>
+                <h5 class = 'name'>Name: Water</h5>
+                <h5 class = 'price'>Price: $120.00</h5>
+                <input class='btn btn-success' type="button" value="Add" onclick = 'addToCart(this)'>
+            </div>
+
+            <div class = 'col-4'>
+                <h5 class = 'name'>Name: Butter</h5>
+                <h5 class = 'price'>Price: $35.87</h5>
+                <input class='btn btn-success' type="button" value="Add" onclick = 'addToCart(this)'>
+            </div>
+
+            <div class = 'col-4'>
+                <h5 class = 'name'>Name: Milk</h5>
+                <h5 class = 'price'>Price: $10.10</h5>
+                <input class='btn btn-success' type="button" value="Add" onclick = 'addToCart(this)'>
+            </div>
+        </div>
+    </div>
+    <script src="cart.js"></script>
+</body>
+</html>

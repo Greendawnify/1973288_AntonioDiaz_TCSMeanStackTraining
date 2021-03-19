@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+<body>
+    <div class = 'container'>
+        <div class = 'row'>
+            <div class = 'col-1 d-flex justify-content-start'>
+                <span><a href="index.html">Back</a></span>
+            </div>
+            <div class = 'col-11 d-flex justify-content-center'>
+                <h1>Shopping Cart Checkout</h1>
+            </div>
+        </div>
+        <br/>
+        <div class = 'row'>
+            <div class="col d-flex justify-content-center">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                Item
+                            </th>
+                            <th>
+                                Price
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id = 'table'>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <br/>
+
+        <div class = 'row'>
+            <div class="col d-flex justify-content-center">
+                <label id = 'totalPrice'>Total Price: $00</label>
+            </div>
+        </div>
+        <br/>
+        <hr/>
+        <br/>
+        <div class = 'row'>
+            <div class = 'col d-flex justify-content-center'>
+                <input class = 'btn btn-dark' type="button" value="Clear Checkout Data" onclick = 'clearData()'>
+            </div>
+        </div>
+    </div>
+    <script src="checkout.js"></script>
+</body>
+</html>
