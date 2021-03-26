@@ -1,0 +1,51 @@
+<div class = 'container'>
+    <br/>
+    <div class = 'row d-flex justify-content-center'>
+        <div class = 'col-4 d-flex justify-content-center titleDiv'>
+            <h1>Registration Form</h1>
+        </div>
+    </div>
+
+    <div class = 'row d-flex justify-content-between'>
+        <div class = 'col-4'>
+        </div>
+        <div *ngIf = 'badInput' class="col-4">
+            <h5 class='errorBanner'>Incorrect Input try again</h5><br/>
+        </div>
+        <div class = 'col-4 d-flex justify-content-end'>
+            <input class = 'btn btn-dark loginBtn' type="button" value="Login" (click) = "loginRedirect()">
+        </div>
+    </div>
+    <br/>
+
+
+    <div class = 'row'>
+        <div class = 'col d-flex justify-content-center'>
+            <form [formGroup] = 'signUpRef' (ngSubmit) = 'registerUser()'>
+                <label >First Name</label>
+                <input type="text" formControlName = 'fname'><br/><br/>
+
+                <label >Last Name</label>
+                <input type="text" formControlName = 'lname'><br/><br/>
+
+                <label >Userame</label>
+                <input type="text" formControlName = 'user'><br/><br/>
+
+                <label >Password</label>
+                <input type="password" formControlName = 'pass'><br/><br/>
+
+                <input class = 'btn btn-success registerBtn' type="submit" value="Register">
+                <input class = 'btn btn-success' type="reset" value="Reset">
+            </form>
+        </div>
+
+    </div>
+
+    <div class = 'row'>
+        <div class ='col d-flex justify-content-end'>
+            <input class = 'btn btn-dark' type="button" value="Clear User" (click) = "clearStorage()">
+        </div>
+    </div>
+
+
+</div>

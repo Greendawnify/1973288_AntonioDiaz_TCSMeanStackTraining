@@ -1,0 +1,28 @@
+.container {
+  background-color: beige;
+  height: 500px;
+}
+
+.errorBanner {
+  background-color: rgba(255, 0, 0, 0.342);
+  text-align: center;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.registerBtn {
+  margin: 10px 70px;
+}
+
+form label {
+  margin-right: 20px;
+}
+
+.loginBtn {
+  height: 40px;
+}
+
+.titleDiv {
+  background-color: rgba(0, 128, 0, 0.746);
+  border-radius: 5px;
+}

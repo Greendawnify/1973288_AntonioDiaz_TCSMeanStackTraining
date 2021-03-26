@@ -1,0 +1,47 @@
+<div class = 'container'>
+    <br/>
+
+    <div class = 'row d-flex justify-content-center'>
+        <div class = 'col-2 d-flex justify-content-center titleDiv'>
+            <h1 class = 'loginTitle'>Login</h1>
+        </div>
+    </div>
+    <br/>
+
+    <div *ngIf = 'incorrectLogin' class = 'row d-flex justify-content-center'>
+        <div class="col-4">
+            <h5 class='errorBanner'>Login or Password was incorrect</h5><br/>
+        </div>
+        
+    </div>
+
+    <div *ngIf = 'loginCredentials' class = 'row d-flex justify-content-center'>
+        <div class="col-4">
+            <h5 class='errorBanner'>No User Info. Sign Up!</h5><br/>
+        </div>
+        
+    </div>
+    
+
+    <div class = 'row'>
+        <div class = 'col d-flex justify-content-center'>
+            <form [formGroup] = 'loginRef' (ngSubmit) = 'loginCheck()'>
+                <label >Username</label>
+                <input type="text" formControlName = 'user'><br/><br/>
+
+                <label >Password</label>
+                <input type="password" formControlName = 'pass'><br/><br/>
+
+                <input class = 'btn btn-success' type="submit" value="Login">
+            </form>
+        </div>
+    </div>
+
+    <div class = 'row'>
+        <div class = 'col d-flex justify-content-end'>
+            <input class = 'btn btn-dark' type="button" value="Sign Up" (click) = 'signUpRedirect()'>
+        </div>
+    </div>
+    
+
+</div>

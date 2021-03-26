@@ -1,0 +1,49 @@
+.container-fluid {
+  height: 500px;
+  background-color: beige;
+}
+
+thead tr {
+  background-color: rgb(152, 187, 142);
+}
+
+tr th {
+  width: 400px;
+  text-align: center;
+  border: solid black 1px;
+}
+
+tr td {
+  text-align: center;
+  border: solid black 1px;
+}
+
+tbody tr {
+  background-color: rgb(231, 250, 188);
+}
+
+tbody tr:nth-child(even) {
+  background-color: rgb(219, 251, 142);
+}
+
+form label {
+  margin-right: 20px;
+}
+
+.titleRow {
+  background-color: rgb(42, 143, 42);
+}
+
+.formBtn {
+  height: 40px;
+}
+
+.formDiv {
+}
+
+.errorBanner {
+  background-color: rgba(255, 0, 0, 0.342);
+  text-align: center;
+  border-radius: 15px;
+  padding: 5px;
+}

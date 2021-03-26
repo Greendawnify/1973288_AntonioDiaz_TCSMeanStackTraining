@@ -1,0 +1,68 @@
+<div class = 'container-fluid'>
+    <div class = 'row titleRow'>
+        <div class = 'col d-flex justify-content-center'>
+            <h1>My Portfolio</h1>
+        </div>
+    </div>
+    <br/>
+
+    <div class = 'row'>
+        <div class="col d-flex justify-content-end">
+            <input class = 'btn btn-dark' type="button" value="Logout" (click) = 'logoutUser()'>
+        </div>
+    </div>
+
+    <!--Welcome user name-->
+    <div class = 'row d-flex justify-content-center'>
+        <div class = 'col-4'>
+            <h4>Welcome: {{username}}</h4>
+        </div>
+    </div>
+    <br/>
+
+    <div *ngIf ='invalidInput'  class = 'row d-flex justify-content-center'>
+        <div class="col-4">
+            <h5 class='errorBanner'>Name or Number was invalid</h5><br/>
+        </div>
+        
+    </div>
+
+    <!--Form and save button-->
+    <div class = 'row'>
+        <div class = 'col-6 d-flex justify-content-end formDiv'>
+            <form [formGroup] = 'contactRef'>
+                <label >Contact name</label>
+                <input type="text" formControlName = 'name' ><br/><br/>
+
+                <label >Phone Number</label>
+                <input type="number" formControlName = 'phone' ><br/><br/>
+            </form>
+        </div>
+
+        <div class = 'col-6 d-flex justify-content-start align-items-center formDiv'>
+            <input class ='btn btn-success formBtn' type="button" value="Save" (click) = "saveContacts()">
+        </div>
+    </div>
+
+    <!--Table-->
+    <div class="row">
+        <div *ngIf = "hasContacts" class="col d-flex justify-content-center">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Phone Number</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor = 'let contact of contacts'>
+                        <td>{{contact.name}}</td>
+                        <td>{{contact.number}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <br/>
+    <br/>
+</div>
