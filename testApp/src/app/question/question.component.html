@@ -8,13 +8,13 @@
     </div>
     <hr>
     <div class="row">
-        <div  class="col d-flex justify-content-start">
+        <div  class="col d-flex justify-content-start main">
             <h3>{{title}}</h3>
         </div>
     </div>
 
     <div class="row">
-        <div class="col d-flex justify-content-start">
+        <div class="col d-flex justify-content-start main">
             <ol type = 'A'>
                 <li *ngFor = "let choice of choices" >
                     <input type="radio" value="" name = 'questions' (click) ="checked(choices.indexOf(choice))"> {{choice}} 
@@ -25,11 +25,11 @@
 
     <div class = 'row'>
         <div *ngIf = "!finished" class="col d-flex justify-content-end">
-            <input class = 'btn btn-primary' type="button" value="Submit" 
+            <input class = 'btn btn-primary subBtn' type="button" value="Submit" 
             (click) = "submitQuestion()" *ngIf = 'submitIsValid'>
         </div>
         <div *ngIf = "finished" class="col d-flex justify-content-end">
-            <input class = 'btn btn-success' type="button" value="Finished" 
+            <input class = 'btn btn-success subBtn' type="button" value="Finished" 
             (click) = "finishTest()" *ngIf = 'submitIsValid'>
         </div>
     </div>
