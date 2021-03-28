@@ -1,0 +1,44 @@
+<div>
+    <br>
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-6 d-flex justify-content-center">
+            <h1>Online Test Application</h1>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div  class="col d-flex justify-content-start">
+            <h3>{{title}}</h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col d-flex justify-content-start">
+            <ol type = 'A'>
+                <li *ngFor = "let choice of choices" >
+                    <input type="radio" value="" name = 'questions' (click) ="checked(choices.indexOf(choice))"> {{choice}} 
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <div class = 'row'>
+        <div *ngIf = "!finished" class="col d-flex justify-content-end">
+            <input class = 'btn btn-primary' type="button" value="Submit" 
+            (click) = "submitQuestion()" *ngIf = 'submitIsValid'>
+        </div>
+        <div *ngIf = "finished" class="col d-flex justify-content-end">
+            <input class = 'btn btn-success' type="button" value="Finished" 
+            (click) = "finishTest()" *ngIf = 'submitIsValid'>
+        </div>
+    </div>
+    <hr>
+
+    <div class="row">
+        <div class="col d-flex justify-content-center">
+            {{index}}/{{questions.length}}
+        </div>
+    </div>
+
+</div>

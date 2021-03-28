@@ -1,0 +1,34 @@
+.my-class {
+  background-color: red;
+}
+
+.questionDiv {
+  margin: 20px 2px 20px 5px;
+}
+
+.incorrect {
+  background-color: rgb(219, 64, 64);
+  border-radius: 10px;
+  padding: 5px 0px 5px 10px;
+}
+
+.correct {
+  background-color: rgb(76, 182, 76);
+  border-radius: 10px;
+  padding: 5px 0px 5px 10px;
+}
+
+.correctAnswer {
+  background-color: rgb(61, 150, 251);
+  border-radius: 2px;
+  padding: 2px;
+  text-decoration: underline;
+}
+
+.wrongAnswer {
+  text-decoration: underline;
+}
+
+.revelBtn {
+  height: 40px;
+}

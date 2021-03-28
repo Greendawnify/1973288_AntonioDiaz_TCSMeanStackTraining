@@ -1,0 +1,30 @@
+<div class="container-fluid">
+    <br>
+    <br>
+    <div class="row d-flex justify-content-between">
+        <div class= "col-4 d-flex justify-content-start">
+            <h1>Test Results</h1>
+        </div>
+        <div class= "col-4 d-flex justify-content-center">
+            <h3>{{numOfCorrectQuestions}}/{{orderedQuestions.length}}</h3> <h3>{{finalGrade}}</h3> 
+        </div>
+        <div class= "col-4 d-flex justify-content-end">
+            <input *ngIf = 'reveled' class ='btn btn-primary revelBtn' type="button" value="Reveal" (click) = 'revealResults()'>
+            <input *ngIf = '!reveled' class ='btn btn-danger revelBtn' type="button" value="Exit" (click) = 'exitTest()'>
+        </div>
+    </div>
+    <hr>
+
+    <div *ngFor = 'let question of orderedQuestions' class="row questionDiv " [id] = "question.id">
+        <h4>
+            {{question.title}}
+        </h4>
+        <ol type ='A'>
+             <li *ngFor = 'let choice of question.choices'>
+                 <span [id] = "(choice)+(question.id)"  >{{choice}}</span><p [id] = "('display')+(choice)+(question.id)" ></p>
+             </li>
+        </ol>
+    </div>
+
+    
+</div>
