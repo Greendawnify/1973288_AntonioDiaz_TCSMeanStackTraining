@@ -1,0 +1,23 @@
+.gridClass {
+  border: solid black 1px;
+}
+
+thead tr {
+  background-color: rgb(40, 117, 206);
+}
+
+tbody tr {
+  background-color: rgb(87, 148, 218);
+}
+
+tbody tr:nth-child(even) {
+  background-color: rgb(122, 182, 250);
+}
+
+.titleDiv {
+  background-color: aqua;
+}
+
+.inputDiv {
+  background-color: beige;
+}

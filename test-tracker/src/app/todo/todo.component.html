@@ -1,0 +1,65 @@
+<div>
+    <mat-grid-list cols="4" rowHeight = '100px'>
+        <mat-grid-tile colspan = "4" class="gridClass titleDiv">
+            <h2>Test Tracker</h2>
+        </mat-grid-tile>
+        <mat-grid-tile colspan = "2" rowspan = 4 class="gridClass inputDiv">
+            
+            <form #todoRef = 'ngForm' (ngSubmit) = 'storeTodo(todoRef.value)'>
+                <mat-form-field>
+                    <mat-label>ID</mat-label>
+                    <input matInput type="text" name = 'id' ngModel>
+                </mat-form-field>
+                <br>
+                <mat-form-field>
+                    <mat-label>Name</mat-label>
+                    <input matInput type="text" name = 'name' ngModel>
+                </mat-form-field>
+                <br>
+                <mat-form-field>
+                    <mat-label>Task</mat-label>
+                    <!-- <input matInput type="text-area" name = 'text' ngModel> -->
+                    <textarea matInput  name = 'task' ngModel></textarea>
+                </mat-form-field>
+                <br>
+                <mat-form-field>
+                    <mat-label>Date</mat-label>
+                    <input matInput type="date" name = 'date' ngModel>
+                </mat-form-field>
+                <br>
+                <button mat-raised-button color="primary" type = 'submit'>Store Task</button>
+            </form>
+        </mat-grid-tile>
+        <mat-grid-tile colspan = "2" rowspan = 4 class="gridClass">
+            <div style="height: 100%; width: 100%;">
+                <mat-grid-list cols="1" rowHeight = '100px'>
+                    <mat-grid-tile colspan = "1" class="gridClass titleDiv">
+                        <h4>Table</h4>
+                    </mat-grid-tile>
+                    <mat-grid-tile colspan = "1" rowspan = 3 class="gridClass inputDiv"> 
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Emp ID</th>
+                                    <th>Name</th>
+                                    <th>Task</th>
+                                    <th>Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor = "let todo of todoList">
+                                    <td>{{todo.id}}</td>
+                                    <td>{{todo.name}}</td>
+                                    <td>{{todo.task}}</td>
+                                    <td>{{todo.date}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </mat-grid-tile>
+                    
+                </mat-grid-list>
+            </div>
+        </mat-grid-tile>
+
+    </mat-grid-list>
+</div>
