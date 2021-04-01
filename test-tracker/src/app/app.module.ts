@@ -12,6 +12,8 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { TodoComponent } from './todo/todo.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatButtonModule} from '@angular/material/button';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,8 @@ import {MatButtonModule} from '@angular/material/button';
     HttpClientModule,
     MatGridListModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    ServiceWorkerModule.register('ngsw-config.js', { enabled: environment.production })
     
   ],
   providers: [],
