@@ -1,1 +1,6 @@
-[{"fname":"Antn","lname":"Diaz","gender":"m","email":"qwee@12","date":"2/4/2021 @ 13:58:54"},{"fname":"John","lname":"Dryer","gender":"F","email":"john@dr.com","date":"2/4/2021 @ 13:59:48"},{"fname":"Abi","lname":"Gale","gender":"Female","email":"abi@gai/com","date":"2/4/2021 @ 14:41:49"}]
+[
+    {"fname":"Antn","lname":"Diaz","gender":"m","email":"qwee@12","date":"2/4/2021 @ 13:58:54"},
+    {"fname":"John","lname":"Dryer","gender":"F","email":"john@dr.com","date":"2/4/2021 @ 13:59:48"},
+    {"fname":"Abi","lname":"Gale","gender":"Female","email":"abi@gai/com","date":"2/4/2021 @ 14:41:49"},
+    {"fname":"Joey","lname":"Diante","gender":"Male","email":"DianteJ@gmail.com","date":"2/4/2021 @ 14:54:35"}
+]
