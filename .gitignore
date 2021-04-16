@@ -10,6 +10,7 @@ logRecords_Report.txt
 phase3TestTracker_Report.txt
 chatSocket_Report.txt
 callRecord_Report.txt
+mongoConnectionToWebsite_Report.txt
 *.jpg
 demo_input_screenshot.PNG
 demo_output_screenshot.PNG

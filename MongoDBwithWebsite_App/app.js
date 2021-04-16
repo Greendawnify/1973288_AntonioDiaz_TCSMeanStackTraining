@@ -1,5 +1,4 @@
 let app = require("express")();
-let mongoClient = require("mongodb").MongoClient;
 let http = require("http").Server(app);
 let io = require("socket.io")(http);
 let port = 9090;
